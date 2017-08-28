@@ -16,7 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".MyService"/>
+
+        <service android:name=".MyService" />
+
+        <activity android:name="com.servicebinder.example.Main2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.servicebinder.example.BinderServiceSample"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
